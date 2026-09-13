@@ -68,17 +68,17 @@ HashMap * createMap(long capacity) {
 
 void insertMap(HashMap * map, char * key, void * value) {
     
-    if(map == NULL || key == NULL) return NULL ;
+    if(map == NULL || key == NULL) return ;
     long index = hash(key, map->capacity) ;
     while(map->buckets[index] != NULL && map->buckets[index]->key != NULL){
         if(strcmp(map->buckets[index]->key, key) == 0){
             map->buckets[index]->value = value ;
             map->current = index ;
             return ;
-        }
-        
+        }  
+        index = (index +1) % map->capacity ;
     }
-    index = (index +1) % map->capacity ;    
+        
 
     if(map->buckets[index] == NULL){
         map->buckets[index] = (Pair *) malloc(sizeof(Pair)) ;
