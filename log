@@ -26,3 +26,16 @@ Sun Sep 13 04:50:37 PM UTC 2026:
  tests:  1|6
 total_score: 5/60
 3d76826
+Sun Sep 13 05:08:54 PM UTC 2026: 
+ hashmap.c | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:71:43: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+   71 |     if(map == NULL || key == NULL) return NULL ;
+      |                                           ^~~~
+hashmap.c:69:6: note: declared here
+   69 | void insertMap(HashMap * map, char * key, void * value) {
+      |      ^~~~~~~~~
+4c8cb5e
