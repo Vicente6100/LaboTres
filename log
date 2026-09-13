@@ -120,3 +120,13 @@ Sun Sep 13 09:11:12 PM UTC 2026:
  tests:  13|2
 total_score: 40/60
 5f16e86
+Sun Sep 13 09:19:49 PM UTC 2026: 
+ hashmap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:155:53: error: lvalue required as increment operand
+  155 |     for (long i = map->current; i < map->capacity; 1++){
+      |                                                     ^~
+8370455
