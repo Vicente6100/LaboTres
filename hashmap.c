@@ -77,8 +77,7 @@ void insertMap(HashMap * map, char * key, void * value) {
             return ;
         }  
         index = (index +1) % map->capacity ;
-    }
-        
+    }        
 
     if(map->buckets[index] == NULL){
         map->buckets[index] = (Pair *) malloc(sizeof(Pair)) ;
@@ -97,8 +96,22 @@ void insertMap(HashMap * map, char * key, void * value) {
 // Recuerde actualizar el índice current a la posición encontrada. Recuerde que el arreglo es circular.
 
 Pair * searchMap(HashMap * map,  char * key) {   
+    if(map == NULL || key == NULL) return NULL;
 
+    long index = hash(key, map->capacity) ;
+    long inicio = index ;
 
+    while (map->buckets[index] != NULL){
+        if(map->buckets[index]->key != NULL && strcmp(map->buckets[index]->key, key)){
+            map->current = index ;
+            return map->buckets[index] ;
+            
+        }
+
+        index = (index + 1) % map->capacity ;
+        
+    }
+    
     return NULL;
 }
 
