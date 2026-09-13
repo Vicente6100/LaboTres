@@ -163,3 +163,14 @@ hashmap.c:188:71: error: expected ‘;’ before ‘}’ token
   189 |         }
       |         ~                                                              
 17e12f4
+Sun Sep 13 10:59:37 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:180:15: error: ‘old_buckets’ undeclared (first use in this function)
+  180 |     (Pair **) old_buckets = map->buckets ;
+      |               ^~~~~~~~~~~
+hashmap.c:180:15: note: each undeclared identifier is reported only once for each function it appears in
+95dfe46
