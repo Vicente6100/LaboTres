@@ -174,3 +174,9 @@ hashmap.c:180:15: error: ‘old_buckets’ undeclared (first use in this functio
       |               ^~~~~~~~~~~
 hashmap.c:180:15: note: each undeclared identifier is reported only once for each function it appears in
 95dfe46
+Sun Sep 13 11:00:23 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 60/60
+e078a2e
