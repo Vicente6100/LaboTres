@@ -73,3 +73,16 @@ Sun Sep 13 08:09:52 PM UTC 2026:
  tests:  5|4
 total_score: 20/60
 bc3e2e6
+Sun Sep 13 08:53:29 PM UTC 2026: 
+ hashmap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:127:43: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+  127 |     if(map == NULL || key == NULL) return NULL;
+      |                                           ^~~~
+hashmap.c:125:6: note: declared here
+  125 | void eraseMap(HashMap * map,  char * key) {
+      |      ^~~~~~~~
+3433a8f
