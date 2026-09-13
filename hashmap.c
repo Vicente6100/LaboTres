@@ -109,7 +109,8 @@ Pair * searchMap(HashMap * map,  char * key) {
         }
 
         index = (index + 1) % map->capacity ;
-        
+
+        if(inicio = index) break;
     }
     
     return NULL;

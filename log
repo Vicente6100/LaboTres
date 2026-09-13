@@ -56,3 +56,14 @@ hashmap.c:102:10: error: unused variable ‘inicio’ [-Werror=unused-variable]
       |          ^~~~~~
 cc1: all warnings being treated as errors
 e912482
+Sun Sep 13 08:08:39 PM UTC 2026: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:113:12: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  113 |         if(inicio = index) break;
+      |            ^~~~~~
+cc1: all warnings being treated as errors
+5ef9956
