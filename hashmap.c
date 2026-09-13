@@ -102,7 +102,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     long inicio = index ;
 
     while (map->buckets[index] != NULL){
-        if(map->buckets[index]->key != NULL && strcmp(map->buckets[index]->key, key)){
+        if(map->buckets[index]->key != NULL && strcmp(map->buckets[index]->key, key) == 0){
             map->current = index ;
             return map->buckets[index] ;
             
@@ -124,12 +124,11 @@ Pair * searchMap(HashMap * map,  char * key) {
 
 void eraseMap(HashMap * map,  char * key) {    
     
-    if(map == NULL || key == NULL) return ;
-    Pair *par = searchMap(map, key) ;
-    if (par != NULL){
-        par->key = NULL ;
-        map->size-- ;
-    }
+    //if(map == NULL || key == NULL) return ;
+    //Pair *par = searchMap(map, key) ;
+    //if (par != NULL){
+     //   par->key = NULL ;
+    ///
     
     
 }
