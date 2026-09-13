@@ -130,3 +130,9 @@ hashmap.c:155:53: error: lvalue required as increment operand
   155 |     for (long i = map->current; i < map->capacity; 1++){
       |                                                     ^~
 8370455
+Sun Sep 13 09:20:11 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|2
+total_score: 40/60
+0e6be92
