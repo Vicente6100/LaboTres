@@ -98,3 +98,13 @@ Sun Sep 13 08:55:48 PM UTC 2026:
  tests:  8|3
 total_score: 30/60
 55312cc
+Sun Sep 13 08:57:15 PM UTC 2026: 
+ hashmap.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:129:12: error: ‘Pair’ has no member named ‘size’
+  129 |         par->size -- ;
+      |            ^~
+a4b577c
